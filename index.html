@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A modern, implementation-ready hospital management system built on CARE's open-source foundation." />
+    <meta name="theme-color" content="#0b1f33" />
+    <link rel="icon" type="image/png" href="./assests/favicon_noBG.png" />
+    <link rel="apple-touch-icon" href="./assests/favicon_noBG.png" />
+    <title>Seha One | Modern hospital operations</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Seha One home">
+        <img class="brand-logo" src="./assests/logo_noBG.png" alt="" />
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#platform">Platform</a>
+        <a href="#modules">Modules</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#implementation">Implementation</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button button-small button-dark" href="#contact">Book a discovery call <span>↗</span></a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+      <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+        <a href="#platform">Platform</a>
+        <a href="#modules">Modules</a>
+        <a href="#workflows">Workflows</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#implementation">Implementation</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Care delivery, made visible</div>
+          <h1>AI-powered healthcare <em>management system.</em></h1>
+          <p class="hero-lead">Give clinical, operational, and leadership teams one calm, connected place to run the hospital—from first registration to follow-up.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#contact">Plan your pilot <span>→</span></a>
+            <a class="text-link" href="#platform">Explore the platform <span>↓</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Product proof points">
+            <div><strong>One platform</strong><span>for clinical + operations</span></div>
+            <div><strong>Open foundation</strong><span>built on CARE</span></div>
+            <div><strong>Flexible delivery</strong><span>cloud or private deployment</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Illustrative CARE hospital dashboard">
+          <div class="dashboard-window">
+            <div class="window-topbar"><img class="topbar-logo" src="./assests/favicon_noBG.png" alt="" /><span class="topbar-chip">Central Hospital</span><span class="avatar">SK</span></div>
+            <aside class="dash-sidebar">
+              <span class="side-active">⌂</span><span>♙</span><span>▦</span><span>⌁</span><span>▣</span><span class="side-bottom">⚙</span>
+            </aside>
+            <div class="dashboard-main">
+              <div class="dash-title-row"><div><span class="micro-label">MONDAY, 24 AUGUST</span><h2>Good morning, Fatima Al-Harbi</h2></div><button class="icon-button">＋</button></div>
+              <div class="metric-grid">
+                <div class="metric-card navy"><span>Today's visits</span><strong>148</strong><small>↑ 12% from yesterday</small></div>
+                <div class="metric-card"><span>Waiting now</span><strong>22</strong><small class="amber">6 need triage</small></div>
+                <div class="metric-card"><span>Bed occupancy</span><strong>78%</strong><div class="mini-progress"><i></i></div></div>
+              </div>
+              <div class="dash-columns">
+                <div class="queue-card"><div class="card-heading"><h3>Live patient queue</h3><a href="#workflows">View all</a></div>
+                  <div class="queue-row"><span class="patient-initials cyan">AM</span><div><strong>Aisha Malik</strong><small>General medicine · Token 18</small></div><span class="queue-tag blue">With nurse</span></div>
+                  <div class="queue-row"><span class="patient-initials violet">RK</span><div><strong>Rohan Kumar</strong><small>Cardiology · Token 19</small></div><span class="queue-tag amber">Waiting</span></div>
+                  <div class="queue-row"><span class="patient-initials peach">SF</span><div><strong>Sara Farooq</strong><small>Emergency · Token 20</small></div><span class="queue-tag red">Priority</span></div>
+                </div>
+                <div class="activity-card"><div class="card-heading"><h3>Care activity</h3><span class="live-label">LIVE</span></div><div class="activity-line"><i class="line-icon cyan">✓</i><div><strong>Lab results received</strong><small>3 minutes ago</small></div></div><div class="activity-line"><i class="line-icon violet">+</i><div><strong>Bed 2B assigned</strong><small>12 minutes ago</small></div></div><div class="activity-line"><i class="line-icon peach">↗</i><div><strong>Invoice settled</strong><small>28 minutes ago</small></div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card schedule-card"><span class="tiny-icon">◷</span><div><small>Next appointment</small><strong>10:30 · Dr. A. Khan</strong></div><span class="floating-arrow">→</span></div>
+          <div class="floating-card care-score"><span class="score-ring">92</span><div><small>Care completion</small><strong>On track today</strong></div></div>
+        </div>
+      </section>
+
+      <section class="logo-strip" aria-label="Product outcomes">
+        <span>Designed for the people behind</span><strong>Hospitals</strong><strong>Clinics</strong><strong>Care networks</strong><strong>Public health programs</strong>
+      </section>
+
+      <section class="challenge-section section-shell" id="challenges">
+        <div class="section-kicker">THE PROBLEMS WORTH SOLVING <span>01</span></div>
+        <div class="section-heading challenge-heading"><h2>When systems fragment,<br /><em>care feels it first.</em></h2><p>Seha One helps replace the workarounds that slow teams down: handoffs across disconnected systems, paper queues, and operational decisions made without a live view.</p></div>
+        <div class="challenge-grid">
+          <article><span class="challenge-no">01</span><div class="challenge-art art-files"><i></i><i></i><i></i></div><h3>Fragmented patient context</h3><p>Staff lose time searching across records, papers, messages, and separate systems before they can act.</p></article>
+          <article><span class="challenge-no">02</span><div class="challenge-art art-queue"><i></i><i></i><i></i><i></i></div><h3>Unclear patient flow</h3><p>When queues, triage, and next actions are invisible, waiting grows and patient experience suffers.</p></article>
+          <article><span class="challenge-no">03</span><div class="challenge-art art-signal"><i></i><i></i><i></i><i></i><i></i></div><h3>Operational blind spots</h3><p>Capacity, inventory, billing, and care operations cannot be managed confidently from delayed reports.</p></article>
+        </div>
+      </section>
+
+      <section class="section-shell scale-section" aria-label="Choose your deployment scale">
+        <div class="section-kicker">BUILT FOR YOUR SCALE</div>
+        <div class="scale-tabs" role="tablist" aria-label="Deployment scale">
+          <button class="scale-tab is-active" type="button" role="tab" aria-selected="true" data-copy="Run one facility's full patient journey—registration through billing—on a single, calmly connected workspace.">Single facility</button>
+          <button class="scale-tab" type="button" role="tab" aria-selected="false" data-copy="Coordinate facilities, locations, and shared capacity across a multi-site network from one operating model.">Multi-facility network</button>
+          <button class="scale-tab" type="button" role="tab" aria-selected="false" data-copy="Support decentralized capacity, critical-care coordination, and public-health workflows across many sites.">Public health programme</button>
+        </div>
+        <p class="scale-copy" id="scaleCopy">Run one facility's full patient journey—registration through billing—on a single, calmly connected workspace.</p>
+      </section>
+
+      <section class="section-shell intro-section" id="platform">
+        <div class="section-kicker">ONE CONNECTED PLATFORM <span>02</span></div>
+        <div class="section-heading two-column-heading"><h2>Less coordination work.<br /><em>More coordinated care.</em></h2><p>Seha One brings the day-to-day work of a health facility into one adaptable workspace. Your teams see the same real-time picture—without adding another layer of admin.</p></div>
+      </section>
+
+      <section class="section-shell feature-section" id="features">
+        <div class="feature-section-heading"><span>CORE FEATURE SHOWCASE</span><p>One adaptable platform for the clinical and operational workflows that shape a patient’s day.</p></div>
+        <div class="feature-grid">
+          <article class="feature feature-mint"><div class="feature-icon turquoise">✦</div><span class="feature-number">01</span><h3>Patient journey, connected</h3><p>Registration, appointments, encounters, orders, and follow-up stay linked around the patient—not isolated in separate tools.</p><div class="patient-journey"><span class="journey-step filled">1</span><i></i><span class="journey-step filled">2</span><i></i><span class="journey-step filled">3</span><i></i><span class="journey-step">4</span><i></i><span class="journey-step">5</span></div><div class="journey-labels"><span>Register</span><span>Consult</span><span>Investigate</span><span>Treat</span><span>Follow up</span></div></article>
+          <article class="feature feature-sky"><div class="feature-icon blue">⌁</div><span class="feature-number">02</span><h3>Know what is happening now</h3><p>Give teams a shared view of queues, capacity, bed availability, and in-flight care activity.</p><div class="capacity-viz"><div class="capacity-head"><span>Ward capacity</span><strong>78% <i>●</i></strong></div><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="capacity-key"><span><b></b> Occupied</span><span><b></b> Available</span></div></div></article>
+          <article class="feature feature-peach"><div class="feature-icon amber">▦</div><span class="feature-number">03</span><h3>Run the back office with context</h3><p>Coordinate inventory, billing, scheduling, organizations, and facility operations alongside care delivery.</p><div class="ops-snapshot"><div><span>Inventory</span><b>92% stocked</b></div><div><span>Invoices</span><b>12 pending</b></div><div><span>Shifts</span><b>6 today</b></div></div></article>
+          <article class="feature feature-lavender"><div class="feature-icon violet">⌘</div><span class="feature-number">04</span><h3>Adapt to your operating model</h3><p>Configure facilities, locations, roles, workflows, and integrations around how your teams actually work.</p><div class="config-list"><div><i class="config-dot"></i>Facilities<b>4 configured</b></div><div><i class="config-dot"></i>Roles &amp; permissions<b>12 active</b></div><div><i class="config-dot"></i>Integrations<b>3 connected</b></div></div></article>
+        </div>
+      </section>
+
+      <section class="section-shell module-section" id="modules">
+        <div class="section-kicker">THE FULL MODULE SET</div>
+        <div class="section-heading two-column-heading"><h2>Every workflow,<br /><em>one connected system.</em></h2><p>Capabilities already built into the CARE foundation Seha One runs on—configured to your facilities, roles, and operating model.</p></div>
+        <div class="module-groups">
+          <div class="module-category">
+            <h3>Clinical</h3>
+            <div class="module-grid">
+              <article class="module-card"><div class="feature-icon turquoise">◉</div><h4>Patient records</h4><p>Profiles, history, and demographics in one place.</p></article>
+              <article class="module-card"><div class="feature-icon turquoise">⌁</div><h4>Encounters &amp; consultations</h4><p>Document visits, observations, and clinical notes.</p></article>
+              <article class="module-card"><div class="feature-icon turquoise">⌬</div><h4>Admission &amp; discharge</h4><p>Track daily rounds through to discharge workflow.</p></article>
+              <article class="module-card"><div class="feature-icon turquoise">✓</div><h4>Medication &amp; prescriptions</h4><p>Prescribe, track, and reconcile medication orders.</p></article>
+            </div>
+          </div>
+          <div class="module-category">
+            <h3>Operations</h3>
+            <div class="module-grid">
+              <article class="module-card"><div class="feature-icon blue">▣</div><h4>Bed &amp; capacity</h4><p>ICU, ventilator, oxygen, and bed availability.</p></article>
+              <article class="module-card"><div class="feature-icon blue">▦</div><h4>Pharmacy &amp; inventory</h4><p>Facility stock, consumables, and dispensing.</p></article>
+            </div>
+          </div>
+          <div class="module-category">
+            <h3>Administration</h3>
+            <div class="module-grid">
+              <article class="module-card"><div class="feature-icon amber">↗</div><h4>Billing &amp; invoicing</h4><p>Charge accounts, invoices, and dispensing-linked billing.</p></article>
+              <article class="module-card"><div class="feature-icon violet">◌</div><h4>Audit &amp; access control</h4><p>Role-based permissions and full activity audit logs.</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow-band" id="workflows">
+        <div class="section-shell">
+          <div class="section-kicker light">WORKFLOWS THAT FLOW <span>03</span></div>
+          <div class="workflow-heading"><h2>From arrival to outcome,<br /><em>every handoff has a home.</em></h2><p>Move information forward without chasing it down. Every team gets the next action, the latest context, and the confidence to keep care moving.</p></div>
+          <div class="workflow-rail">
+            <article class="workflow-step"><span>01</span><div class="workflow-symbol">⌁</div><h3>Arrival</h3><p>Register patients and route them to the right service.</p></article>
+            <article class="workflow-step"><span>02</span><div class="workflow-symbol">◉</div><h3>Care</h3><p>Document encounters, observations, and care plans.</p></article>
+            <article class="workflow-step"><span>03</span><div class="workflow-symbol">⌬</div><h3>Coordinate</h3><p>Order labs, manage beds, and align teams in real time.</p></article>
+            <article class="workflow-step"><span>04</span><div class="workflow-symbol">✓</div><h3>Close the loop</h3><p>Manage dispensing, billing, discharge, and follow-up.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell screens-section" id="screens">
+        <div class="section-kicker">PRODUCT IN PRACTICE <span>04</span></div>
+        <div class="section-heading screen-heading"><div><h2>Built for the pace of a<br /><em>real clinical day.</em></h2></div><p>Explore representative workflow screens. The final implementation can be configured around your teams, locations, and service lines.</p></div>
+        <div class="screen-gallery">
+          <article class="screen-card screen-record"><div class="screen-copy"><span class="screen-index">A / PATIENT RECORD</span><h3>Everything that matters, in context.</h3><p>Bring the current encounter, history, observations, medications, and tasks together.</p></div><div class="record-ui"><div class="record-bar"><span>‹</span><strong>Patient profile</strong><i>•••</i></div><div class="profile-row"><div class="profile-avatar">AM</div><div><strong>Aisha Malik</strong><small>F · 32 years · MRN 01982</small></div><span class="profile-status">Active encounter</span></div><div class="record-tabs"><span class="tab-selected">Overview</span><span>Timeline</span><span>Orders</span><span>Files</span></div><div class="record-content"><div class="record-panel"><small>Vitals</small><div class="vital-grid"><span>BP <b>118/72</b></span><span>Pulse <b>74</b></span><span>SpO₂ <b>98%</b></span></div></div><div class="record-panel note"><small>Clinical note</small><strong>Review in 7 days</strong><p>Continue current management plan.</p></div></div></div></article>
+          <article class="screen-card screen-queue"><div class="screen-copy"><span class="screen-index">B / LIVE QUEUE</span><h3>Make waiting visible.</h3><p>Help frontline staff triage, organize, and act without a paper trail.</p></div><div class="queue-ui"><div class="queue-top"><span>Outpatient queue</span><i>24 waiting</i></div><div class="queue-filters"><b>All</b><span>Waiting</span><span>In care</span></div><div class="queue-ui-row"><em class="pink">01</em><div><strong>Fatima Noor</strong><small>General medicine</small></div><i>09:12</i></div><div class="queue-ui-row"><em class="cyan">02</em><div><strong>Omar Hassan</strong><small>Cardiology</small></div><i>09:15</i></div><div class="queue-ui-row"><em class="amber">03</em><div><strong>Maya Ali</strong><small>General medicine</small></div><i>09:18</i></div></div></article>
+          <article class="screen-card screen-billing"><div class="screen-copy"><span class="screen-index">C / BILLING + INVENTORY</span><h3>Operational clarity, without the clutter.</h3><p>Connect charge items, invoices, and stock workflows to the care event.</p></div><div class="billing-ui"><div class="billing-title"><span>Invoice #INV-2481</span><b>Paid</b></div><div class="billing-person"><i>SF</i><span>Sarah Farooq<br /><small>Emergency encounter</small></span></div><div class="invoice-line"><span>Consultation</span><b>$45.00</b></div><div class="invoice-line"><span>Lab panel</span><b>$18.00</b></div><div class="invoice-total"><span>Total</span><b>$63.00</b></div><div class="invoice-paid">✓ Payment received</div></div></article>
+        </div>
+        <p class="screen-note">Screen previews use illustrative, fictional information. Never use identifiable patient data in product marketing.</p>
+      </section>
+
+      <section class="security-section" id="compliance">
+        <div class="section-shell security-grid">
+          <div><div class="section-kicker light">KSA COMPLIANCE READINESS <span>05</span></div><h2>Compliance and regulation,<br /><em>designed for KSA.</em></h2><p>Plan Saudi healthcare, insurance, and invoicing workflows around the applicable NPHIES and ZATCA FATOORA requirements—then validate the final scope with specialist advisers.</p><a class="text-link light-link" href="#contact">Discuss your requirements <span>→</span></a></div>
+          <div class="security-points">
+            <article><span class="security-icon">◌</span><div><h3>NPHIES workflow planning</h3><p>Plan interoperability for eligibility, pre-authorisation, claims, and health-information exchange workflows.</p></div></article>
+            <article><span class="security-icon">⌁</span><div><h3>ZATCA e-invoicing</h3><p>Design billing flows around Saudi e-invoicing regulations and the required invoice data.</p></div></article>
+            <article><span class="security-icon">▣</span><div><h3>FATOORA Phase 2</h3><p>Prepare compliant invoice generation, onboarding, and API integration for the relevant ZATCA wave.</p></div></article>
+            <article><span class="security-icon">↗</span><div><h3>Governed deployment</h3><p>Define roles, auditability, data handling, and operational controls for the target environment.</p></div></article>
+          </div>
+        </div>
+        <div class="section-shell compliance-chips">
+          <span class="compliance-chip">NPHIES</span>
+          <span class="compliance-chip">ZATCA</span>
+          <span class="compliance-chip">FATOORA Phase 2</span>
+          <span class="compliance-chip">KSA deployment planning</span>
+        </div>
+        <div class="compliance-note section-shell"><span>Important</span><p>NPHIES and ZATCA FATOORA obligations depend on your entity, services, integration wave, deployment, policies, and operating procedures. Seha One supports compliance planning; it does not claim certification or regulatory approval without a formal assessment.</p></div>
+      </section>
+
+      <section class="regulatory-section" id="regulatory">
+        <div class="section-shell">
+          <div class="section-kicker">KSA REGULATORY READINESS <span>06</span></div>
+          <div class="section-heading regulatory-heading"><h2>Build KSA requirements in<br /><em>from the first workflow.</em></h2><p>We map the health-insurance exchange, invoicing, integration, governance, and deployment requirements that apply to your organisation before defining the operating model.</p></div>
+          <div class="regulatory-grid">
+            <article><span>NPHIES</span><h3>Health and insurance exchange workflows</h3><p>Assess applicable eligibility, pre-authorisation, claims, and clinical exchange use cases.</p></article>
+            <article><span>ZATCA</span><h3>Saudi e-invoicing requirements</h3><p>Map the regulated invoice data, business rules, and electronic-solution requirements that apply.</p></article>
+            <article><span>FATOORA</span><h3>Phase 2 integration planning</h3><p>Prepare the onboarding and API integration approach for the organisation’s notified implementation wave.</p></article>
+            <article><span>Governance</span><h3>Deployment and operating controls</h3><p>Define data handling, access, audit, support, and assurance responsibilities before go-live.</p></article>
+          </div>
+          <p class="regulatory-disclaimer">This is implementation-planning guidance, not legal advice or a statement of certification. Formal regulatory and legal review is required for each deployment.</p>
+        </div>
+      </section>
+
+      <section class="section-shell implementation-section" id="implementation">
+        <div class="section-kicker">A PRACTICAL PATH TO GO-LIVE <span>07</span></div>
+        <div class="section-heading two-column-heading"><h2>Start focused.<br /><em>Scale with confidence.</em></h2><p>We turn implementation into a guided partnership—aligning the platform to your workflows before rollout, then supporting the people who make it successful.</p></div>
+        <div class="implementation-grid"><article><span>01</span><h3>Discover</h3><p>Map clinical, operational, reporting, and compliance needs.</p></article><article><span>02</span><h3>Configure</h3><p>Set up locations, roles, workflows, forms, and integrations.</p></article><article><span>03</span><h3>Pilot</h3><p>Train teams and validate the highest-value workflows first.</p></article><article><span>04</span><h3>Grow</h3><p>Expand across facilities with support, governance, and insight.</p></article></div>
+      </section>
+
+      <section class="why-section">
+        <div class="section-shell">
+          <div class="section-kicker light">WHY SEHA ONE <span>08</span></div>
+          <div class="section-heading why-heading"><h2>Modern experience.<br /><em>Practical foundations.</em></h2><p>Choose a platform approach that respects the realities of hospital operations—and gives you room to evolve without starting again.</p></div>
+          <div class="why-grid">
+            <article><span>01</span><h3>Designed around the work</h3><p>Clear, responsive workflows for the clinicians, coordinators, and administrators who use them every day.</p></article>
+            <article><span>02</span><h3>Open-source foundation</h3><p>Built on CARE, supporting transparency, extensibility, and a lower-risk path away from vendor lock-in.</p></article>
+            <article><span>03</span><h3>Delivery that fits</h3><p>Shape a cloud, private-cloud, or on-premise path around your security, scale, and operating needs.</p></article>
+            <article><span>04</span><h3>Partnership beyond launch</h3><p>Combine workflow design, implementation, training, support, and a roadmap for continuous improvement.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-section section-shell" id="proof">
+        <div class="section-kicker">WHAT WE VERIFY BEFORE YOU COMMIT <span>09</span></div>
+        <div class="proof-layout"><div><h2>Built for teams who<br /><em>cannot afford guesswork.</em></h2><p>We do not invent client logos, testimonials, or outcome claims. Instead, we begin with a focused pilot and define the evidence that matters to your organisation.</p></div><div class="proof-points"><article><span>✓</span><div><h3>Map your baseline</h3><p>Agree the patient-flow, operational, and adoption signals that matter before implementation starts.</p></div></article><article><span>✓</span><div><h3>Validate in a real workflow</h3><p>Start with a controlled service line, facility, or use case before expanding the programme.</p></div></article><article><span>✓</span><div><h3>Build your case study</h3><p>Use verified outcomes and approved evidence—not marketing assumptions—to tell the story of change.</p></div></article></div></div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="section-shell"><div class="section-kicker">FREQUENTLY ASKED QUESTIONS <span>10</span></div><div class="faq-layout"><div><h2>Questions you should<br /><em>ask before choosing an HMS.</em></h2><p>Every deployment is different. These are the practical questions that usually shape a useful first conversation.</p></div><div class="faq-list"><details open><summary>Can Seha One be customized for our hospital or clinic?<span>+</span></summary><p>Yes. The implementation begins by mapping your facilities, roles, workflows, forms, service lines, and integration needs. The right scope is determined during discovery.</p></details><details><summary>Can it be deployed on-premise or in a private cloud?<span>+</span></summary><p>Yes. Deployment planning can consider cloud, private-cloud, and on-premise options alongside data-residency, security, and operating requirements.</p></details><details><summary>Can it support multiple hospitals or facilities?<span>+</span></summary><p>CARE includes organisation, facility, and location models that can be configured for multi-facility operating environments. We validate the target model during solution design.</p></details><details><summary>Can existing data and integrations be brought across?<span>+</span></summary><p>Data migration and integration feasibility are assessed before a pilot. The practical approach depends on the source systems, data quality, required interfaces, and governance rules.</p></details><details><summary>Does the platform make us compliant with NPHIES or ZATCA FATOORA?<span>+</span></summary><p>No software alone creates compliance or regulatory approval. The platform can support implementation planning, but legal, technical, deployment, process, and operational controls must be assessed for your organisation.</p></details><details><summary>What happens after the pilot?<span>+</span></summary><p>After pilot validation, the rollout can extend in phases with training, governance, support, integrations, migration, and measured adoption goals.</p></details></div></div></div>
+      </section>
+
+      <section class="cta-section" id="contact">
+        <div class="cta-orb orb-left"></div><div class="cta-orb orb-right"></div>
+        <div class="cta-content"><div class="eyebrow light-eyebrow"><span class="status-dot"></span> Your next care system should fit your care model</div><h2>See what a calmer,<br /><em>connected hospital can feel like.</em></h2><p>Tell us where you are today. We will help you shape a practical pilot plan around your people, priorities, and environment.</p></div>
+        <form class="contact-form" id="contact-form">
+          <label>Work email<input required type="email" name="email" placeholder="you@hospital.org" /></label>
+          <label>Organisation<input required type="text" name="organisation" placeholder="Your hospital or network" /></label>
+          <label>What are you looking to improve?<select name="interest"><option>Patient flow and registration</option><option>Clinical documentation</option><option>Facility operations</option><option>Billing, inventory, or scheduling</option><option>Multi-facility transformation</option></select></label>
+          <button class="button button-lime" type="submit">Request a discovery call <span>→</span></button>
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#top" aria-label="Seha One home"><img class="brand-logo" src="./assests/logo_noBG.png" alt="" /></a><p>Modern hospital operations, built on CARE's open-source foundation.</p><div><a href="#compliance">Privacy &amp; compliance</a><a href="#top">Back to top ↑</a></div></footer>
+
+    <div class="promo-card" id="promoCard" hidden>
+      <button class="promo-close" id="promoClose" type="button" aria-label="Dismiss">✕</button>
+      <span class="tiny-icon">◷</span>
+      <div><small>Exploring a new HMS?</small><strong>Let's talk through your rollout.</strong></div>
+      <a class="promo-link" href="#contact">Book a call <span>→</span></a>
+    </div>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
