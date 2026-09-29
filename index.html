@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,7 @@
     <link rel="apple-touch-icon" href="./assests/favicon_noBG.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
     <title>Seha One | AI-powered healthcare management for KSA</title>
   </head>
@@ -30,6 +30,7 @@
       </nav>
 
       <div class="header-actions">
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to English">English</button>
         <a class="button button-quiet" href="#contact">Book a KSA discovery</a>
         <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileNav">
           <span class="visually-hidden">Open menu</span><i></i><i></i><i></i>
@@ -85,71 +86,79 @@
       </section>
 
       <section class="section shell challenges" aria-labelledby="challenge-title">
-        <div class="section-label"><span>The operating gaps worth closing</span><b>01</b></div>
+        <div class="section-label"><span>The operating gaps worth closing</span></div>
         <div class="split-heading reveal"><h2 id="challenge-title">When systems fragment, <em>care feels it first.</em></h2><p>Seha One replaces paper handoffs and disconnected tools with a shared operational picture—so teams can make the next decision with the current context.</p></div>
         <div class="challenge-grid">
-          <article class="reveal"><span>01</span><div class="challenge-icon files" aria-hidden="true"></div><h3>Patient context is scattered</h3><p>Records, encounters, orders, and next actions live in places teams have to chase down.</p></article>
-          <article class="reveal"><span>02</span><div class="challenge-icon queue" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Patient flow is unclear</h3><p>Queues and handoffs are harder to manage when frontline teams cannot see what is happening now.</p></article>
-          <article class="reveal"><span>03</span><div class="challenge-icon signal" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Operations lack a live view</h3><p>Capacity, stock, billing, and service performance arrive too late to support daily decisions.</p></article>
+          <article class="reveal"><div class="challenge-icon files" aria-hidden="true"></div><h3>Patient context is scattered</h3><p>Records, encounters, orders, and next actions live in places teams have to chase down.</p></article>
+          <article class="reveal"><div class="challenge-icon queue" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Patient flow is unclear</h3><p>Queues and handoffs are harder to manage when frontline teams cannot see what is happening now.</p></article>
+          <article class="reveal"><div class="challenge-icon signal" aria-hidden="true"><i></i><i></i><i></i><i></i></div><h3>Operations lack a live view</h3><p>Capacity, stock, billing, and service performance arrive too late to support daily decisions.</p></article>
         </div>
       </section>
 
       <section class="section shell scale-section" aria-labelledby="scale-title">
-        <div class="section-label"><span id="scale-title">Designed for your operating scale</span><b>02</b></div>
+        <div class="section-label"><span id="scale-title">Designed for your operating scale</span></div>
         <div class="scale-picker" aria-label="Choose your operating scale">
-          <button class="scale-option is-active" type="button" aria-pressed="true" data-copy="Run one facility’s patient journey—registration through billing—on one connected, governed workspace.">Single facility</button>
-          <button class="scale-option" type="button" aria-pressed="false" data-copy="Coordinate shared capacity, services, and operating standards across a multi-site provider network.">Multi-facility network</button>
-          <button class="scale-option" type="button" aria-pressed="false" data-copy="Support decentralised service delivery and programme visibility across public-health operations.">Public health programme</button>
+          <button class="scale-option is-active" type="button" aria-pressed="true" data-scale="facility" data-copy="Run one facility’s patient journey—registration through billing—on one connected, governed workspace.">Single facility</button>
+          <button class="scale-option" type="button" aria-pressed="false" data-scale="network" data-copy="Coordinate shared capacity, services, and operating standards across a multi-site provider network.">Multi-facility network</button>
+          <button class="scale-option" type="button" aria-pressed="false" data-scale="programme" data-copy="Support decentralised service delivery and programme visibility across public-health operations.">Public health programme</button>
         </div>
         <p class="scale-copy" id="scaleCopy" aria-live="polite">Run one facility’s patient journey—registration through billing—on one connected, governed workspace.</p>
+        <div class="scale-snapshot reveal" aria-label="Operating scale snapshot">
+          <p>What Seha One connects at this scale</p>
+          <div>
+            <article><span>Care delivery</span><strong id="scaleCare">Registration → care → discharge</strong></article>
+            <article><span>Operations</span><strong id="scaleOperations">Live queues and resource status</strong></article>
+            <article><span>Financial control</span><strong id="scaleFinance">Billing clarity at point of service</strong></article>
+          </div>
+        </div>
       </section>
 
       <section class="section shell" id="platform" aria-labelledby="platform-title">
-        <div class="section-label"><span>One connected platform</span><b>03</b></div>
+        <div class="section-label"><span>One connected platform</span></div>
         <div class="split-heading reveal"><h2 id="platform-title">Less coordination work. <em>More coordinated care.</em></h2><p>Configure facilities, roles, workflows, and integrations around how your teams work, without separating clinical delivery from the operation that supports it.</p></div>
         <div class="feature-grid">
-          <article class="feature-card mint reveal"><span class="feature-number">01</span><i class="feature-icon">✦</i><h3>Patient journey, connected</h3><p>Registration, appointments, encounters, orders, and follow-up stay linked around the patient.</p><div class="journey-visual" aria-hidden="true"><i class="done">1</i><span></span><i class="done">2</i><span></span><i class="done">3</i><span></span><i>4</i><span></span><i>5</i></div><small>Register · Consult · Investigate · Treat · Follow up</small></article>
-          <article class="feature-card blue reveal"><span class="feature-number">02</span><i class="feature-icon">⌁</i><h3>Know what is happening now</h3><p>Give teams a shared view of queues, capacity, bed availability, and care activity in progress.</p><div class="capacity-visual" aria-hidden="true"><header><span>Ward capacity</span><b>78%</b></header><div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small><b></b> Occupied <b></b> Available</small></div></article>
-          <article class="feature-card amber reveal"><span class="feature-number">03</span><i class="feature-icon">▦</i><h3>Run the back office with context</h3><p>Coordinate inventory, billing, scheduling, and facility operations alongside the care event.</p><dl class="compact-list"><div><dt>Inventory</dt><dd>92% stocked</dd></div><div><dt>Invoices</dt><dd>12 pending</dd></div><div><dt>Shifts</dt><dd>6 today</dd></div></dl></article>
-          <article class="feature-card lilac reveal"><span class="feature-number">04</span><i class="feature-icon">⌘</i><h3>Adapt to your operating model</h3><p>Configure locations, permissions, forms, and integrations around the services you deliver.</p><dl class="compact-list"><div><dt>Facilities</dt><dd>4 configured</dd></div><div><dt>Roles &amp; permissions</dt><dd>12 active</dd></div><div><dt>Integrations</dt><dd>3 connected</dd></div></dl></article>
+          <article class="feature-card mint reveal"><i class="feature-icon">✦</i><h3>Patient journey, connected</h3><p>Registration, appointments, encounters, orders, and follow-up stay linked around the patient.</p><div class="journey-visual" aria-hidden="true"><i class="done">✓</i><span></span><i class="done">✓</i><span></span><i class="done">✓</i><span></span><i>·</i><span></span><i>·</i></div><small>Register · Consult · Investigate · Treat · Follow up</small></article>
+          <article class="feature-card blue reveal"><i class="feature-icon">⌁</i><h3>Know what is happening now</h3><p>Give teams a shared view of queues, capacity, bed availability, and care activity in progress.</p><div class="capacity-visual" aria-hidden="true"><header><span>Ward capacity</span><b>78%</b></header><div><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><small><b></b> Occupied <b></b> Available</small></div></article>
+          <article class="feature-card amber reveal"><i class="feature-icon">▦</i><h3>Run the back office with context</h3><p>Coordinate inventory, billing, scheduling, and facility operations alongside the care event.</p><dl class="compact-list"><div><dt>Inventory</dt><dd>92% stocked</dd></div><div><dt>Invoices</dt><dd>12 pending</dd></div><div><dt>Shifts</dt><dd>6 today</dd></div></dl></article>
+          <article class="feature-card lilac reveal"><i class="feature-icon">⌘</i><h3>Adapt to your operating model</h3><p>Configure locations, permissions, forms, and integrations around the services you deliver.</p><dl class="compact-list"><div><dt>Facilities</dt><dd>4 configured</dd></div><div><dt>Roles &amp; permissions</dt><dd>12 active</dd></div><div><dt>Integrations</dt><dd>3 connected</dd></div></dl></article>
         </div>
       </section>
 
       <section class="intelligence-section" id="intelligence" aria-labelledby="intelligence-title">
         <div class="shell intelligence-layout">
-          <div class="reveal"><div class="section-label light"><span>Applied intelligence</span><b>04</b></div><h2 id="intelligence-title">AI should make the next action <em>clearer, not louder.</em></h2><p>Seha One is designed to surface the operational signal teams need while keeping clinical and operational decisions under accountable human control.</p><a class="text-link light-link" href="#contact">Discuss your AI workflow priorities <b aria-hidden="true">→</b></a></div>
+          <div class="reveal"><div class="section-label light"><span>Applied intelligence</span></div><h2 id="intelligence-title">AI should make the next action <em>clearer, not louder.</em></h2><p>Seha One is designed to surface the operational signal teams need while keeping clinical and operational decisions under accountable human control.</p><a class="text-link light-link" href="#contact">Discuss your AI workflow priorities <b aria-hidden="true">→</b></a></div>
           <div class="intelligence-cards">
-            <article class="reveal"><span>01</span><i>✦</i><h3>Summarise the day</h3><p>Bring queues, capacity, and operational exceptions into a clear management view.</p></article>
-            <article class="reveal"><span>02</span><i>⌁</i><h3>Surface what needs attention</h3><p>Help teams identify unresolved tasks, flow constraints, and handoff gaps to review.</p></article>
-            <article class="reveal"><span>03</span><i>↗</i><h3>Coordinate the next step</h3><p>Give each role the context needed to move a patient or operational workflow forward.</p></article>
+            <article class="reveal"><i>✦</i><h3>Summarise the day</h3><p>Bring queues, capacity, and operational exceptions into a clear management view.</p></article>
+            <article class="reveal"><i>⌁</i><h3>Surface what needs attention</h3><p>Help teams identify unresolved tasks, flow constraints, and handoff gaps to review.</p></article>
+            <article class="reveal"><i>↗</i><h3>Coordinate the next step</h3><p>Give each role the context needed to move a patient or operational workflow forward.</p></article>
           </div>
         </div>
       </section>
 
       <section class="section shell" id="workflows" aria-labelledby="workflow-title">
-        <div class="section-label"><span>Workflows that flow</span><b>05</b></div>
+        <div class="section-label"><span>Workflows that flow</span></div>
         <div class="split-heading reveal"><h2 id="workflow-title">From arrival to outcome, <em>every handoff has a home.</em></h2><p>Start with one service line and make the highest-value workflow visible, measurable, and ready to improve before expanding.</p></div>
         <ol class="workflow-rail">
-          <li class="reveal"><span>01</span><i>⌁</i><h3>Arrival</h3><p>Register and route patients to the right service.</p></li>
-          <li class="reveal"><span>02</span><i>◉</i><h3>Care</h3><p>Document encounters, observations, and care plans.</p></li>
-          <li class="reveal"><span>03</span><i>⌬</i><h3>Coordinate</h3><p>Order labs, manage beds, and align teams.</p></li>
-          <li class="reveal"><span>04</span><i>✓</i><h3>Close the loop</h3><p>Manage billing, discharge, dispensing, and follow-up.</p></li>
+          <li class="reveal"><i>⌁</i><h3>Arrival</h3><p>Register and route patients to the right service.</p></li>
+          <li class="reveal"><i>◉</i><h3>Care</h3><p>Document encounters, observations, and care plans.</p></li>
+          <li class="reveal"><i>⌬</i><h3>Coordinate</h3><p>Order labs, manage beds, and align teams.</p></li>
+          <li class="reveal"><i>✓</i><h3>Close the loop</h3><p>Manage billing, discharge, dispensing, and follow-up.</p></li>
         </ol>
       </section>
 
       <section class="section shell product-proof" aria-labelledby="proof-title">
-        <div class="section-label"><span>Product, in practice</span><b>06</b></div>
+        <div class="section-label"><span>Product, in practice</span></div>
         <div class="split-heading reveal"><h2 id="proof-title">Built for the pace of a <em>real clinical day.</em></h2><p>These are representative, fictional workflow previews. Your final deployment is configured around approved service lines, users, locations, and policies.</p></div>
         <div class="screen-grid" aria-label="Illustrative product workflow previews">
-          <article class="record-screen reveal"><div><span>A / PATIENT RECORD</span><h3>Everything that matters, in context.</h3><p>Current encounter, history, observations, medications, and tasks in one place.</p></div><section aria-hidden="true"><header><b>Patient profile</b><span>···</span></header><div class="patient-row"><i>FA</i><p><b>Fatima Al-Qahtani</b><small>F · 32 years · MRN 01982</small></p><em>Active encounter</em></div><nav>Overview <span>Timeline</span><span>Orders</span><span>Files</span></nav><div class="record-data"><p><small>Vitals</small><b>BP 118/72</b><b>Pulse 74</b><b>SpO₂ 98%</b></p><p><small>Clinical note</small><b>Review in 7 days</b><span>Continue current plan.</span></p></div></section></article>
-          <article class="queue-screen reveal"><div><span>B / LIVE QUEUE</span><h3>Make waiting visible.</h3><p>Help frontline staff triage, organise, and act without a paper trail.</p></div><section aria-hidden="true"><header><b>Outpatient queue</b><em>24 waiting</em></header><nav>All <span>Waiting</span><span>In care</span></nav><p><i>01</i><b>Reem Al-Dosari<small>General medicine</small></b><span>09:12</span></p><p><i>02</i><b>Omar Al-Mutairi<small>Cardiology</small></b><span>09:15</span></p><p><i>03</i><b>Maha Al-Zahrani<small>General medicine</small></b><span>09:18</span></p></section></article>
-          <article class="billing-screen reveal"><div><span>C / BILLING + INVENTORY</span><h3>Operational clarity, without the clutter.</h3><p>Connect charge items, invoices, and stock workflows to the care event.</p></div><section aria-hidden="true"><header><span>Invoice #INV-2481</span><b>Paid</b></header><p class="billing-person"><i>NA</i><span>Noura Al-Otaibi<small>Emergency encounter</small></span></p><p>Consultation <b>SAR 169.00</b></p><p>Lab panel <b>SAR 68.00</b></p><footer>Total <b>SAR 237.00</b></footer></section></article>
+          <article class="record-screen reveal"><div><span>Patient record</span><h3>Everything that matters, in context.</h3><p>Current encounter, history, observations, medications, and tasks in one place.</p></div><section aria-hidden="true"><header><b>Patient profile</b><span>···</span></header><div class="patient-row"><i>FA</i><p><b>Fatima Al-Qahtani</b><small>F · 32 years · MRN 01982</small></p><em>Active encounter</em></div><nav>Overview <span>Timeline</span><span>Orders</span><span>Files</span></nav><div class="record-data"><p><small>Vitals</small><b>BP 118/72</b><b>Pulse 74</b><b>SpO₂ 98%</b></p><p><small>Clinical note</small><b>Review in 7 days</b><span>Continue current plan.</span></p></div></section></article>
+          <article class="queue-screen reveal"><div><span>Live queue</span><h3>Make waiting visible.</h3><p>Help frontline staff triage, organise, and act without a paper trail.</p></div><section aria-hidden="true"><header><b>Outpatient queue</b><em>24 waiting</em></header><nav>All <span>Waiting</span><span>In care</span></nav><p><b>Reem Al-Dosari<small>General medicine</small></b><span>09:12</span></p><p><b>Omar Al-Mutairi<small>Cardiology</small></b><span>09:15</span></p><p><b>Maha Al-Zahrani<small>General medicine</small></b><span>09:18</span></p></section></article>
+          <article class="billing-screen reveal"><div><span>Billing + inventory</span><h3>Operational clarity, without the clutter.</h3><p>Connect charge items, invoices, and stock workflows to the care event.</p></div><section aria-hidden="true"><header><span>Invoice #INV-2481</span><b>Paid</b></header><p class="billing-person"><i>NA</i><span>Noura Al-Otaibi<small>Emergency encounter</small></span></p><p>Consultation <b>SAR 169.00</b></p><p>Lab panel <b>SAR 68.00</b></p><footer>Total <b>SAR 237.00</b></footer></section></article>
         </div>
       </section>
 
       <section class="compliance-section" id="compliance" aria-labelledby="compliance-title">
         <div class="shell">
-          <div class="section-label light"><span>KSA readiness</span><b>07</b></div>
+          <div class="section-label light"><span>KSA readiness</span></div>
           <div class="compliance-heading reveal"><div><h2 id="compliance-title">Build KSA requirements in <em>from the first workflow.</em></h2><p>We map the health-insurance exchange, invoicing, integration, deployment, and operating controls relevant to your organisation before defining the implementation scope.</p></div><a class="text-link light-link" href="#contact">Discuss your requirements <b aria-hidden="true">→</b></a></div>
           <div class="compliance-grid">
             <article class="reveal"><span>NPHIES</span><h3>Health and insurance exchange</h3><p>Assess applicable eligibility, pre-authorisation, claims, and health-information exchange workflows.</p><a href="https://www.chi.gov.sa/en/Uniplat/Pages/default3.aspx" target="_blank" rel="noreferrer">Official reference <b aria-hidden="true">↗</b></a></article>
@@ -162,29 +171,29 @@
       </section>
 
       <section class="section shell" id="implementation" aria-labelledby="implementation-title">
-        <div class="section-label"><span>A practical path to go-live</span><b>08</b></div>
+        <div class="section-label"><span>A practical path to go-live</span></div>
         <div class="split-heading reveal"><h2 id="implementation-title">Start focused. <em>Scale with confidence.</em></h2><p>Build evidence in a controlled workflow before expanding across facilities, services, and integrations.</p></div>
         <ol class="implementation-grid">
-          <li class="reveal"><span>01</span><h3>Discover</h3><p>Map care, operations, compliance, and success measures.</p></li>
-          <li class="reveal"><span>02</span><h3>Configure</h3><p>Set locations, roles, forms, workflows, and integrations.</p></li>
-          <li class="reveal"><span>03</span><h3>Validate</h3><p>Train teams and confirm the highest-value workflow.</p></li>
-          <li class="reveal"><span>04</span><h3>Scale</h3><p>Expand with governance, support, and insight.</p></li>
+          <li class="reveal"><h3>Discover</h3><p>Map care, operations, compliance, and success measures.</p></li>
+          <li class="reveal"><h3>Configure</h3><p>Set locations, roles, forms, workflows, and integrations.</p></li>
+          <li class="reveal"><h3>Validate</h3><p>Train teams and confirm the highest-value workflow.</p></li>
+          <li class="reveal"><h3>Scale</h3><p>Expand with governance, support, and insight.</p></li>
         </ol>
       </section>
 
       <section class="pilot-section">
         <div class="shell pilot-layout">
-          <div class="reveal"><div class="section-label light"><span>Evidence before expansion</span><b>09</b></div><h2>Build your pilot around <em>what matters.</em></h2><p>We do not invent outcomes. Instead, define the operational, patient-flow, and adoption signals worth validating before rollout.</p></div>
+          <div class="reveal"><div class="section-label light"><span>Evidence before expansion</span></div><h2>Build your pilot around <em>what matters.</em></h2><p>We do not invent outcomes. Instead, define the operational, patient-flow, and adoption signals worth validating before rollout.</p></div>
           <div class="pilot-points">
-            <article class="reveal"><i>01</i><div><h3>Agree the baseline</h3><p>Identify the current workflow, signals, and constraints.</p></div></article>
-            <article class="reveal"><i>02</i><div><h3>Validate in use</h3><p>Test a controlled service line or facility with real teams.</p></div></article>
-            <article class="reveal"><i>03</i><div><h3>Decide with evidence</h3><p>Use approved findings to plan the next phase.</p></div></article>
+            <article class="reveal"><div><h3>Agree the baseline</h3><p>Identify the current workflow, signals, and constraints.</p></div></article>
+            <article class="reveal"><div><h3>Validate in use</h3><p>Test a controlled service line or facility with real teams.</p></div></article>
+            <article class="reveal"><div><h3>Decide with evidence</h3><p>Use approved findings to plan the next phase.</p></div></article>
           </div>
         </div>
       </section>
 
       <section class="section shell faq-section" aria-labelledby="faq-title">
-        <div class="section-label"><span>Frequently asked questions</span><b>10</b></div>
+        <div class="section-label"><span>Frequently asked questions</span></div>
         <div class="faq-layout"><div class="reveal"><h2 id="faq-title">Questions worth asking <em>before choosing an HMS.</em></h2><p>Every deployment is different. These are the practical questions that shape a useful first conversation.</p></div><div class="faq-list reveal"><details open><summary>Can Seha One be configured for our hospital or clinic?<i aria-hidden="true">+</i></summary><p>Yes. Discovery maps your facilities, roles, service lines, forms, workflows, and integration requirements before configuration begins.</p></details><details><summary>Can it support NPHIES and ZATCA FATOORA planning?<i aria-hidden="true">+</i></summary><p>We assess the relevant integration and operating scope with your specialists. No software alone creates compliance or regulatory approval.</p></details><details><summary>Can it support multiple facilities?<i aria-hidden="true">+</i></summary><p>Organisation, facility, and location models can be configured for multi-facility operating environments and governed rollout plans.</p></details><details><summary>What happens after a discovery session?<i aria-hidden="true">+</i></summary><p>We agree a focused workflow, implementation scope, stakeholders, and the evidence needed to validate a pilot.</p></details></div></div>
       </section>
 
