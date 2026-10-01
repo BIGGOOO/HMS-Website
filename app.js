@@ -1,6 +1,8 @@
 import { inject } from '@vercel/analytics';
+import { injectSpeedInsights } from '@vercel/speed-insights';
 
 inject();
+injectSpeedInsights();
 
 const header = document.querySelector('.site-header');
 const navToggle = document.querySelector('#navToggle');
