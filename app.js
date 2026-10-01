@@ -1,3 +1,7 @@
+import { inject } from '@vercel/analytics';
+
+inject();
+
 const header = document.querySelector('.site-header');
 const navToggle = document.querySelector('#navToggle');
 const mobileNav = document.querySelector('#mobileNav');
